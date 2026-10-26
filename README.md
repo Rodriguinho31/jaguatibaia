@@ -13,14 +13,14 @@ Landing page acadêmica **de uma única tela, sem rolagem**, desenvolvida em ASP
 - `Controllers/HomeController.cs`: recebe a requisição e entrega o modelo à View.
 - `Models/LandingViewModel.cs`: armazena nome, fundação e URL oficial.
 - `Views/Home/Index.cshtml`: página Razor com HTML semântico e botão acessível.
-- `wwwroot/css/site.css`: layout 100dvh, cena vetorial, semente e flor animadas por CSS.
+- `wwwroot/css/site.css`: layout 100dvh, fotografia de fundo com degradê, semente e flor animadas por CSS.
 - `wwwroot/js/site.js`: animação inicial via GSAP, clique, germinação e redirecionamento.
 
 ## Interação
 O visitante clica na semente. A semente desaparece, o caule cresce, folhas aparecem, pétalas abrem. Após ~3,1 s, o navegador redireciona para `https://jaguatibaia.org.br/`. O link também aparece no cabeçalho.
 
 ## Observações
-- A arte é vetorial (CSS + SVG) e não usa imagens externas.
+- O fundo usa a imagem fornecida pelo usuário, salva localmente em `wwwroot/images/semente-cuidado.png`. A animação da semente e da flor é feita em CSS.
 - A biblioteca GSAP e as fontes são carregadas por CDN, exigindo internet para esses recursos. O botão e a flor funcionam sem GSAP.
 - A página é um **projeto acadêmico independente**, não o site oficial da ONG.
 - O enunciado PIM fornecido exige outras seções (galeria, contato, indicadores etc.). Esta versão de uma tela segue o pedido específico, mas **não cumpre integralmente o checklist do PIM**.
